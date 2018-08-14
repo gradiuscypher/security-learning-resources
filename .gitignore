@@ -1,0 +1,7 @@
+# Project Related
+venv*/
+.idea/
+*.conf
+
+# Authentication Related
+client_secret.json
