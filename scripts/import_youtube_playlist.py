@@ -31,4 +31,5 @@ def process_playlist(playlist_id):
     :return:
     """
     yt_service = get_authenticated_service()
-    result = yt_service.playlistItems.list(part='snippet', playlistId=playlist_id, maxResults=50).execute()
+    result = yt_service.playlistItems().list(part='snippet', playlistId=playlist_id, maxResults=50).execute()
+    return result
